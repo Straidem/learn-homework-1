@@ -17,11 +17,17 @@
 
 questions_and_answers = {}
 
+
+
+
 def ask_user(answers_dict):
     """
     Замените pass на ваш код
     """
     pass
-    
+        
+
+
+
 if __name__ == "__main__":
     ask_user(questions_and_answers)
