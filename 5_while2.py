@@ -15,19 +15,28 @@
     
 """
 
-questions_and_answers = {}
+questions_and_answers = {
+  "Как дела?": "Хорошо!",
+  "Что делаешь?": "Программирую",
+  "На чём программируешь?": "На питоне",
+  "Что программируешь?": "Цикл while",
+  "Получается?" : ":("
+  }
 
 
+my_keys = questions_and_answers.keys()
+my_values = questions_and_answers.values()
 
 
 def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
-        
-
-
-
+    user_que = input("Введите вопрос: ").capitalize()
+    while True:
+        if user_que in my_keys:
+            print(questions_and_answers[user_que])
+            break
+        else:
+            user_que = input("Введите вопрос: ").capitalize()
+      
+       
 if __name__ == "__main__":
-    ask_user(questions_and_answers)
+        ask_user(questions_and_answers)
